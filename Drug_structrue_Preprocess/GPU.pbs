@@ -1,0 +1,11 @@
+#PBS -S /bin/bash
+##PBS -N <job_name>
+##PBS -o ${PBS_JOBNAME}.o${PBS_JOBID}
+##PBS -e ${PBS_JOBNAME}.e${PBS_JOBID}
+##PBS -q gpuq
+##PBS -I nodes=1:ppn=2
+##PBS -W x=GRES:gpu@1
+##PBS -r y
+#cd ${PBS_O_WORKDIR}
+cd Smiles_Encoder
+time CUDA_VISIBLE_DEVICES=0 python3 RNN.py
