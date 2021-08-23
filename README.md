@@ -1,12 +1,34 @@
-# ReadMe(文件说明)
+# ReadMe
 
-## DrugComb
+## 开发环境
+
+python: 3.8.8
+
+pandas: 1.2.4
+
+numpy: 1.19.5
+
+matplotlib: 3.3.4
+
+keras: 2.6.0
+
+sklearn: 0.24.1
+
+lxml: 4.6.3
+
+rdkit: 2019.09.3
+
+csv :1.0
+
+## 文件说明
+
+### DrugComb
 
 - drugcombs_scored.csv
 
   药物协同作用原始数据，来源于DrugComb
 
-## Drug_disease_Preprocess
+### Drug_disease_Preprocess
 
 - Drug_disease.csv
 
@@ -20,7 +42,7 @@
 
   药物-适应症，原始数据，来源于TTD数据库
 
-## Drug_structrue_Preprocess
+### Drug_structrue_Preprocess
 
 - 1.png
 
@@ -50,7 +72,7 @@
 
   分子结构原始数据，来源于DrugBank
 
-## Drug_target_preprocess
+### Drug_target_preprocess
 
 - Drug_target.csv
 
@@ -64,9 +86,9 @@
 
   原始数据，来源于DGIdb
 
-## Expression_Preprocess
+### Expression_Preprocess
 
-### output
+#### output
 
 - cell_line_exp.csv
 
@@ -80,7 +102,7 @@
 
   编码后的表达数据，执行Exp_Encode.py后得到
 
-### 当前目录
+#### 当前目录
 
 - cell_line2Expression.py
 
@@ -106,7 +128,7 @@
 
   来源于CCLE数据库的原始数据，包含细胞系原名与Depmap-id的对应关系
 
-## Pathway_preprocess
+### Pathway_preprocess
 
 - Drug_Pathways.csv
 
